@@ -151,16 +151,16 @@ src/
 ![MuseumPost](screenshots/MuseumPost.jpg)
 
 ### API Museums (page 1):
-![ApiMuseums](screenshots/ApiMuseums.jpg)
+![ApiMuseums](screenshots/API_museums.jpg)
 
 ### API Museum (id 1):
-![ApiMuseum](screenshots/ApiMuseum.jpg)
+![ApiMuseum](screenshots/API_museum.jpg)
 
 ### POSTMAN — API Museums:
-![PostmanMuseums](screenshots/PostmanMuseums.jpg)
+![PostmanMuseums](screenshots/API_museums(Postman).jpg)
 
 ### POSTMAN — API Museum:
-![PostmanMuseum](screenshots/PostmanMuseum.jpg)
+![PostmanMuseum](screenshots/API_museum(Postman).jpg)
 
 ### Login:
 ![Login](screenshots/Login.jpg)
@@ -174,10 +174,10 @@ src/
 ---
 
 ### Database — museums_museos table:
-![MuseosTable](screenshots/MuseosTable.jpg)
+![MuseosTable](screenshots/BD_museos.jpg)
 
 ### Database — museums_users table:
-![UsersTable](screenshots/UsersTable.jpg)
+![UsersTable](screenshots/BD_users.jpg)
 
 ---
 
