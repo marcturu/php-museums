@@ -74,8 +74,7 @@ Test credentials (pre-registered user):
 ### 6. Live deployment
 #### Current LIVE Status (2026) ![status: inactive](https://img.shields.io/badge/status-inactive-red)
 
-> ⚠️ **Important Note**  
-> The project was deployed on the server:
+> ⚠️ **Important Note** The project was deployed on the server:
 ```
 https://eimtcms2.techlab.uoc.edu/~mturur/pec3/dbphppec3_museums/
 ```
