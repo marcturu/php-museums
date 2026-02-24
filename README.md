@@ -101,7 +101,7 @@ DOCS/
 ├── ExplanationReport.pdf       ← Implementation details.
 ├── Statement.jpg               ← Summarized project statement.
 ├── TestsReport.pdf             ← Test report verifying each requirement against the live server.
-└── WAMPSetupGuide.pdf          ← Optional reference for original WAMP and Drupal setup.
+└── WAMPSetupGuide.pdf          ← Optional reference for original WAMP setup.
 db/
 └── dbphppec3_db.sql            ← Database dump (tables + data)
 src/
