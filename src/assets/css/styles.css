@@ -1,0 +1,561 @@
+/* ----- General styles ----- */
+:root {
+    --color-background: #f4f4f4;
+    --color-text: #333;
+    --color-primary: #2563eb;
+    --color-primary-focus: #1d4ed8;
+    --color-success: #10b981;
+    --color-success-hover: #059669;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-dark: #1f2937;
+    --color-warning: #fde047;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1 {
+    text-align: start;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+
+/* ----- header.php & menu.php  ----- */
+.header {
+    background-color: var(--color-dark);
+    color: white;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.menu-nav-list {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    position: relative;
+}
+
+.menu-nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.menu-nav-list li a:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-1.5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-nav-list li a.active {
+    color: var(--color-warning);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+}
+
+.menu-nav-api input[type="number"] {
+    width: 70px;
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: all 0.15s ease;
+}
+
+.menu-nav-api input[type="number"]:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+.menu-nav-api button {
+    padding: 0.35rem 0.7rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.menu-nav-api button:hover {
+    background-color: var(--color-primary-focus);
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu user styles */
+.menu-user {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 3px;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.menu-buttons a {
+    background-color: var(--color-success);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.menu-buttons a:hover {
+    background-color: var(--color-success-hover);
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-buttons a.logout {
+    background-color: var(--color-danger);
+}
+
+.menu-buttons a.logout:hover {
+    background-color: var(--color-danger-hover);
+}
+
+.menu-nav-user {
+    color: var(--color-warning);
+    font-weight: 600;
+    text-align: right;
+}
+
+/* ----- index.php ----- */
+h1.h1-home {
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.museums-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.museum-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: left;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.museum-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.museum-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.museum-card a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.museum-card a:hover {
+    text-decoration: underline;
+}
+
+.museum-card p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+/* ----- random-museum.php y post.php ----- */
+.museum-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 5rem;
+}
+
+.museum-image {
+    flex: 1 1 auto;
+    max-width: 900px;
+}
+
+.museum-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.museum-details {
+    flex: 1 1 300px;
+    max-width: 900px;
+}
+
+.museum-details p {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+h1.museum-name {
+    margin-bottom: 2rem;
+}
+
+/* ----- museums.php ----- */
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-end;
+    justify-content: center;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 1rem;
+    max-width: 750px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-group label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.filter-group select {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: all 0.15s ease;
+    cursor: pointer;
+}
+
+.filter-group select:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+.filter-group select option {
+    cursor: pointer;
+}
+
+.filter-bar button, .clear-filters {
+    height: 40px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.filter-bar button:hover {
+    background-color: var(--color-primary-focus);
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.clear-filters {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-danger-hover);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clear-filters:hover {
+    background-color: #b91c1c;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.museums-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.museum-row {
+    display: flex;
+    gap: 1.5rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.museum-row-image {
+    flex: 0 0 400px;
+}
+
+.museum-row-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.museum-row-info a {
+    display: inline-block;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin: 1rem 0;
+}
+
+.museum-row-info a:hover {
+    text-decoration: underline;
+}
+
+.museum-row-info p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+.pagination a {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 6px;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease;
+}
+
+.pagination a:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: translateY(-1.5px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pagination a.active {
+    background-color: var(--color-primary);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* ----- login.php y signup.php ----- */
+.login-container,
+.signup-container,
+.edit-container {
+    max-width: 500px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1,
+.signup-container h1,
+.edit-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--color-dark);
+}
+
+.login-container p.message,
+.signup-container p.message,
+.edit-container p.message {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.login-container p.message,
+.signup-container p.message,
+.edit-container.error {
+    color: var(--color-danger-hover);
+}
+
+.edit-container.success {
+    color: var(--color-success);
+}
+
+.login-container form,
+.signup-container form,
+.edit-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-container label,
+.signup-container label, 
+.edit-container label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.login-container input[type="text"], 
+.login-container input[type="password"],
+.signup-container input[type="text"],
+.signup-container input[type="password"],
+.edit-container input[type="text"],
+.edit-container input[type="password"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.15s ease;
+}
+
+.login-container input[type="text"]:focus, 
+.login-container input[type="password"]:focus,
+.signup-container input[type="text"]:focus,
+.signup-container input[type="password"]:focus,
+.edit-container input[type="text"]:focus,
+.edit-container input[type="password"]:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+.login-container button,
+.signup-container button,
+.edit-container button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.login-container button:hover,
+.signup-container button:hover,
+.edit-container button:hover {
+    background-color: var(--color-primary-focus);
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2)
+}
+
+/* ----- Responsive Design ----- */
+@media (max-width: 768px) {
+    .menu-nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .menu-nav-auth {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .menu-nav-user {
+        text-align: left;
+    }
+
+    .museum-row {
+        flex-direction: column;
+    }
+    .museum-row-image {
+        flex: none;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .filter-bar button,
+    .clear-filters {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-container,
+    .signup-container,
+    .edit-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+}
