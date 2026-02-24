@@ -53,8 +53,7 @@ Alternatively, you can run the import manually from PhpMyAdmin:
 **Import → Select file → `db/dbphppec3_db.sql` → Go**
 
 ### 4. Configure the database connection (if necessary)
-Edit `src/config/db_config.php` and set your local credentials:
-
+Edit `src/config/db_config.php` and set your local credentials, e.g.:
 ```php
 $DB_HOST = "localhost";
 $DB_NAME = "dbphppec3_db";
