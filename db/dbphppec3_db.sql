@@ -45,17 +45,17 @@ CREATE TABLE IF NOT EXISTS `museums_museos` (
 --
 
 INSERT INTO `museums_museos` (`id`, `nombre`, `ciudad`, `tematica`, `fechas_horarios`, `visitas_guiadas`, `precio`, `imagen`) VALUES
-(1, 'Museo del Prado', 'Madrid', 'Arte', 'Lun-Sab 10:00-20:00; Dom 10:00-19:00', 'Sí', 15.00, '/dbphppec3_museums/assets/img/prado.jpg'),
-(2, 'Museu Picasso', 'Barcelona', 'Arte', 'Mar-Dom 10:00-19:00', 'Sí', 12.00, '/dbphppec3_museums/assets/img/picasso.jpg'),
-(3, 'Guggenheim Bilbao', 'Bilbao', 'Arte', 'Mar-Dom 11:00-19:00', 'Sí', 16.00, '/dbphppec3_museums/assets/img/guggenheim.jpg'),
-(4, 'Museo Marítimo Vlc', 'Valencia', 'Historia', 'Lun-Dom 09:00-18:00', 'No', 8.50, '/dbphppec3_museums/assets/img/maritimo.jpg'),
-(5, 'Museo Ciencias Medieval', 'Alicante', 'Tecnología', 'Mar-Dom 10:00-20:00', 'Sí', 10.00, '/dbphppec3_museums/assets/img/medieval.jpg'),
-(6, 'Centro Arte Nova', 'Barcelona', 'Arte', 'Lun-Vie 10:00-18:00', 'Sí', 14.00, '/dbphppec3_museums/assets/img/nova.jpg'),
-(7, 'Museo Pirineo', 'Huesca', 'Historia', 'Mar-Sab 10:00-17:00', 'No', 7.00, '/dbphppec3_museums/assets/img/pirineo.jpg'),
-(8, 'Museo Mediterraneo', 'Tarragona', 'Tradición', 'Lun-Dom 09:30-19:00', 'Sí', 9.00, '/dbphppec3_museums/assets/img/mediterraneo.jpg'),
-(9, 'Museo Espacio MX', 'Madrid', 'Tecnología', 'Lun-Sab 10:00-21:00', 'Sí', 11.50, '/dbphppec3_museums/assets/img/espacio.jpg'),
-(10, 'Museo Solaris', 'Valencia', 'Arte', 'Lun-Dom 10:00-20:00', 'No', 13.00, '/dbphppec3_museums/assets/img/solaris.jpg'),
-(11, 'Museo Extra', 'Valencia', 'Familia', 'Lun-Dom 09:00-19:00', 'No', 9.50, '/dbphppec3_museums/assets/img/extra.jpg');
+(1, 'Museo del Prado', 'Madrid', 'Arte', 'Lun-Sab 10:00-20:00; Dom 10:00-19:00', 'Sí', 15.00, 'assets/img/prado.jpg'),
+(2, 'Museu Picasso', 'Barcelona', 'Arte', 'Mar-Dom 10:00-19:00', 'Sí', 12.00, 'assets/img/picasso.jpg'),
+(3, 'Guggenheim Bilbao', 'Bilbao', 'Arte', 'Mar-Dom 11:00-19:00', 'Sí', 16.00, 'assets/img/guggenheim.jpg'),
+(4, 'Museo Marítimo Vlc', 'Valencia', 'Historia', 'Lun-Dom 09:00-18:00', 'No', 8.50, 'assets/img/maritimo.jpg'),
+(5, 'Museo Ciencias Medieval', 'Alicante', 'Tecnología', 'Mar-Dom 10:00-20:00', 'Sí', 10.00, 'assets/img/medieval.jpg'),
+(6, 'Centro Arte Nova', 'Barcelona', 'Arte', 'Lun-Vie 10:00-18:00', 'Sí', 14.00, 'assets/img/nova.jpg'),
+(7, 'Museo Pirineo', 'Huesca', 'Historia', 'Mar-Sab 10:00-17:00', 'No', 7.00, 'assets/img/pirineo.jpg'),
+(8, 'Museo Mediterraneo', 'Tarragona', 'Tradición', 'Lun-Dom 09:30-19:00', 'Sí', 9.00, 'assets/img/mediterraneo.jpg'),
+(9, 'Museo Espacio MX', 'Madrid', 'Tecnología', 'Lun-Sab 10:00-21:00', 'Sí', 11.50, 'assets/img/espacio.jpg'),
+(10, 'Museo Solaris', 'Valencia', 'Arte', 'Lun-Dom 10:00-20:00', 'No', 13.00, 'assets/img/solaris.jpg'),
+(11, 'Museo Extra', 'Valencia', 'Familia', 'Lun-Dom 09:00-19:00', 'No', 9.50, 'assets/img/extra.jpg');
 
 -- --------------------------------------------------------
 
