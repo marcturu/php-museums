@@ -109,7 +109,7 @@ src/
 ├── includes/
 │   ├── header.php              ← Common HTML head + menu include
 │   └── menu.php                ← Navigation bar (session-aware)
-├── edit.php
+├── edit.php                    ← Profile update
 ├── index.php                   ← Home page (featured museums)
 ├── login.php                   ← Login form + session logic
 ├── logout.php                  ← Session destruction + redirect
