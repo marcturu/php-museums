@@ -3,7 +3,7 @@
 <sub>🗓️ Developed in December 2025</sub>
 
 This project consists of a **PHP-based web application**.  
-It implements a fully functional filterable directory of museums and exhibitions using **pure PHP**, **MySQL** (via PDO), HTML and CSS — covering database design, dynamic pages, REST API endpoints, user authentication, and server deployment.
+It implements a fully functional filterable directory of museums and exhibitions using **pure PHP**, **MySQL** (via PDO), HTML and CSS on WAMP Server — covering database design, dynamic pages, REST API endpoints, user authentication, and server deployment.
 
 ---
 
