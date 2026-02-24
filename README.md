@@ -74,6 +74,15 @@ Test credentials (pre-registered user):
 - **Username**: mturur
 - **Password**: mturur
 
+> **Note:** The `src/` folder contains all the publicly accessible PHP files.  
+> All image paths in the database (`imagen` field) are relative to `src/`, so using this URL ensures that images and pages load correctly.
+> Example: `assets/img/prado.jpg`.  
+> If images do not load, old absolute paths may exist in the database (`dbphppec3_db.sql`). You can fix this by updating the `imagen` field in `museums_museos` via **PhpMyAdmin**, or run:
+```sql
+UPDATE museums_museos
+SET imagen = REPLACE(imagen, '/dbphppec3_museums/', '');
+```
+
 ### 6. Live deployment
 #### Current LIVE Status (2026) ![status: inactive](https://img.shields.io/badge/status-inactive-red)
 
@@ -127,17 +136,6 @@ src/
 - User passwords are hashed using `password_hash($password, PASSWORD_BCRYPT)` on registration.
 - Passwords are verified using `password_verify()` on login.
 - All user-facing output is sanitized with `htmlspecialchars()` to prevent XSS.
-
----
-
-## 🖼️ Image Paths
-
-All museum images must be referenced **relative to `src/`**. Example: `assets/img/prado.jpg`.  
-If images do not load, old absolute paths may exist in the database (`dbphppec3_db.sql`). You can fix this by updating the `imagen` field in `museums_museos` via **PhpMyAdmin**, or run:
-```sql
-UPDATE museums_museos
-SET imagen = REPLACE(imagen, '/dbphppec3_museums/', '');
-```
 
 ---
 
