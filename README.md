@@ -64,7 +64,7 @@ $DB_PASS = "";
 ### 5. Access the site
 Open your browser (or the WAMP server) and navigate to:
 ```
-http://localhost/php-museums/src/
+http://localhost/php-museums/src
 ```
 
 Test credentials (pre-registered user):
