@@ -34,7 +34,7 @@ Make sure you have installed:
 - **MySQL** (via PhpMyAdmin or equivalent)
 
 > ⚠️ On Windows, make sure `php -v` returns a version ≥ 8.x and that the `pdo_mysql` extension is enabled in `php.ini`.  
-> > ⚠️ If WAMP does not start correctly, it may require the Visual C++ Redistributable packages.
+> ⚠️ If WAMP does not start correctly, it may require the Visual C++ Redistributable packages.
 
 ### 1. Clone the repository
 ```bash
