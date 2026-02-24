@@ -32,6 +32,9 @@ Make sure you have installed:
 - **WAMP / LAMP / MAMP** (or equivalent local server stack)
 - **PHP >= 8.x** with PDO and MySQL extensions enabled
 - **MySQL** (via PhpMyAdmin or equivalent)
+- Make sure Apache has:
+  - mod_rewrite enabled
+  - AllowOverride set to All (for `.htaccess` support)
 
 > ⚠️ On Windows, make sure `php -v` returns a version ≥ 8.x and that the `pdo_mysql` extension is enabled in `php.ini`.  
 > ⚠️ If WAMP does not start correctly, it may require the Visual C++ Redistributable packages.
