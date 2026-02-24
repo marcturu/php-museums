@@ -1,6 +1,6 @@
 Options -MultiViews
 RewriteEngine On
-RewriteBase /dbphppec3_museums/api/
+RewriteBase /php-museums/src/api/
 
 # Listado de museos con paginación
 RewriteRule ^museums/([0-9]+)/?$ museums.php?page=$1 [L,QSA]
