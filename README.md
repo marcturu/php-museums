@@ -1,4 +1,4 @@
-# <img alt="Drupal Logo" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" height="45px"> Museums — Native PHP Museum Directory with REST API & Authentication
+# <img alt="Drupal Logo" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" height="45px"> Museums — Native PHP WAMP Museum directory with REST API & Authentication
 
 <sub>🗓️ Developed in December 2025</sub>
 
