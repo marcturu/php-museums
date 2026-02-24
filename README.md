@@ -24,7 +24,7 @@ It implements a fully functional filterable directory of museums and exhibitions
 
 ## 🛠 Installation & Setup
 
-> If you encounter any issues running the project locally, you can consult the original WAMP installation guide included at `DOCS/WAMP&DrupalSetupGuide.pdf`.
+> If you encounter any issues running the project locally, you can consult the original WAMP installation guide included at `DOCS/WAMPSetupGuide.pdf`.
 
 ### 0. Prerequisites
 
