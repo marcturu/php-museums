@@ -82,6 +82,7 @@ Test credentials (pre-registered user):
 UPDATE museums_museos
 SET imagen = REPLACE(imagen, '/dbphppec3_museums/', '');
 ```
+> ⚠️ If the project is moved to a different folder, make sure to update `RewriteBase` in `src/api/.htaccess` accordingly.
 
 ### 6. Live deployment
 #### Current LIVE Status (2026) ![status: inactive](https://img.shields.io/badge/status-inactive-red)
