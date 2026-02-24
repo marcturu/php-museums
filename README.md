@@ -84,58 +84,36 @@ https://eimtcms2.techlab.uoc.edu/~mturur/pec3/dbphppec3_museums/
 ---
 
 ## 📂 Project Structure
-
 ```
+DOCS/
+├── ExplanationReport.pdf       ← Implementation details.
+├── Statement.jpg               ← Summarized project statement.
+├── TestsReport.pdf             ← Test report verifying each requirement against the live server.
+└── WAMPSetupGuide.pdf          ← Optional reference for original WAMP and Drupal setup.
 db/
-└── dbphppec3_db.sql          ← Database dump (tables + data)
-config/
-└── db_config.php             ← DB connection (PDO)
-includes/
-├── header.php                ← Common HTML head + menu include
-└── menu.php                  ← Navigation bar (session-aware)
-api/
-├── .htaccess                 ← URL rewriting for clean API routes
-├── museums.php               ← /api/museums/<page> endpoint
-└── museum.php                ← /api/museum/<id> endpoint
-assets/
-├── css/
-│   └── style.css
-└── img/                      ← Museum images
-index.php                     ← Home page (featured museums)
-random-museum.php             ← Random museum display
-museums.php                   ← Paginated catalogue + filters
-post.php                      ← Individual museum detail page
-login.php                     ← Login form + session logic
-logout.php                    ← Session destruction + redirect
-signup.php                    ← User registration with hashed password
-edit.php                      ← User profile editing
-```
-
-```
-db/
-└── dbphppec3_db.sql              ← Database dump (tables + data)
+└── dbphppec3_db.sql            ← Database dump (tables + data)
 src/
 ├── api/
-│   ├── .htaccess                 ← URL rewriting for clean API routes
-│   ├── museums.php               ← /api/museums/<page> endpoint
-│   └── museum.php                ← /api/museum/<id> endpoint
+│   ├── .htaccess               ← URL rewriting for clean API routes
+│   ├── museums.php             ← /api/museums/<page> endpoint
+│   └── museum.php              ← /api/museum/<id> endpoint
 ├── assets/
 │   ├── css/
 │   │   └── style.css
-│   └── img/                      ← Museum images
+│   └── img/                    ← Museum images
 ├── config/
-│   └── db_config.php             ← DB connection (PDO)
+│   └── db_config.php           ← DB connection (PDO)
 ├── includes/
-│   ├── header.php                ← Common HTML head + menu include
-│   └── menu.php                  ← Navigation bar (session-aware)
+│   ├── header.php              ← Common HTML head + menu include
+│   └── menu.php                ← Navigation bar (session-aware)
 ├── edit.php
-├── index.php                     ← Home page (featured museums)
-├── login.php                     ← Login form + session logic
-├── logout.php                    ← Session destruction + redirect
-├── museums.php                   ← Paginated catalogue + filters
-├── post.php                      ← Individual museum detail page
-├── random-museum.php             ← Random museum display
-└── signup.php                    ← User registration with hashed password
+├── index.php                   ← Home page (featured museums)
+├── login.php                   ← Login form + session logic
+├── logout.php                  ← Session destruction + redirect
+├── museums.php                 ← Paginated catalogue + filters
+├── post.php                    ← Individual museum detail page
+├── random-museum.php           ← Random museum display
+└── signup.php                  ← User registration with hashed password
 ```
 
 ---
