@@ -1,4 +1,4 @@
-# 🏛️ PHPMuseums — Native PHP directory for museums & exhibitions
+# 🏛️ PHPMuseums — Native PHP Museum Directory with REST API & Authentication
 
 <sub>🗓️ Developed in December 2025</sub>
 
