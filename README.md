@@ -18,7 +18,7 @@ It implements a fully functional filterable directory of museums and exhibitions
 - **REST API**: Two read-only JSON endpoints — `/api/museums/<page>` (10 results/page) and `/api/museum/<id>` — both openable via the nav menu in a new tab. Tested with POSTMAN.
 - **User Authentication**: Login and logout with session management, error handling, and SQL injection prevention via PDO prepared statements.
 - **User Registration & Profile Editing**: Signup with encrypted passwords (`PASSWORD_BCRYPT`). Profile edit page allows updating name, surname, and password (username is non-editable).
-- **Deployed**: Published and tested on the server at `https://eimtcms2.techlab.uoc.edu/~mturur/pec3/dbphppec3_museums/`.
+- **Deployed**: Published and tested on the server at `https://eimtcms2.techlab.uoc.edu/~mturur/pec3/dbphppec3_museums`.
 
 ---
 
