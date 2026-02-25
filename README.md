@@ -169,10 +169,10 @@ src/
 ### API Museum (id 1):
 ![ApiMuseum](screenshots/API_museum.jpg)
 
-### POSTMAN — API Museums:
+### POSTMAN — API Museums (page 1):
 ![PostmanMuseums](screenshots/API_museums(Postman).jpg)
 
-### POSTMAN — API Museum:
+### POSTMAN — API Museum (id 1):
 ![PostmanMuseum](screenshots/API_museum(Postman).jpg)
 
 ### Login:
