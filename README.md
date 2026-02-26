@@ -131,6 +131,36 @@ src/
 
 ---
 
+## 🔌 API Reference
+
+Both endpoints return **JSON** and are **read-only** (GET). No authentication required. They open in a new browser tab from the nav menu.
+
+| Endpoint | Description |
+|---|---|
+| `/api/museums/<page>` | Returns up to 10 museums per page with all topics |
+| `/api/museum/<id>` | Returns all fields for the museum with the given ID |
+
+**Example response** (`/api/museums/1`):
+```json
+[
+  {
+    "id": 1,
+    "nombre": "Museo del Prado",
+    "ciudad": "Madrid",
+    "tematica": "Arte",
+    "fechas_horarios": "Lun-Sab 10:00-20:00; Dom 10:00-19:00",
+    "visitas_guiadas": "Sí",
+    "precio": "15.00",
+    "imagen": "assets/img/prado.jpg"
+  },
+  {
+    ...
+  }
+]
+```
+
+---
+
 ## 🔒 Security
 
 - All database queries use **PDO prepared statements** with `bindValue()` to prevent SQL injection.
