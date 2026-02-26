@@ -137,7 +137,7 @@ Both endpoints return **JSON** and are **read-only** (GET). No authentication re
 
 | Endpoint | Description |
 |---|---|
-| `/api/museums/<page>` | Returns up to 10 museums per page with all topics |
+| `/api/museums/<page>` | Returns up to 10 museums per page with all fields |
 | `/api/museum/<id>` | Returns all fields for the museum with the given ID |
 
 **Example response** (`/api/museums/1`):
