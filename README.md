@@ -153,9 +153,7 @@ Both endpoints return **JSON** and are **read-only** (GET). No authentication re
     "precio": "15.00",
     "imagen": "assets/img/prado.jpg"
   },
-  {
-    ...
-  }
+  ...
 ]
 ```
 
