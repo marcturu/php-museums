@@ -188,7 +188,7 @@ Both endpoints return **JSON** and are **read-only** (GET). No authentication re
 ### Museums Catalogue (filtered):
 ![MuseumsFiltered](screenshots/MuseumsFiltered.jpg)
 
-### Museum Detail Page:
+### Museum Post:
 ![MuseumPost](screenshots/MuseumPost.jpg)
 
 ### API Museums (page 1):
